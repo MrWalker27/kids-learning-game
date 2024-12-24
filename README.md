@@ -43,4 +43,9 @@ A fun and interactive educational mini-project designed for kids, featuring two 
 - **Sound Effects**: Added engaging audio feedback using the HTML <audio> element.
 - **Annimations**: Created a visually appealing experience using CSS keyframes and transitions.
 
-![alt text](image.png)
+### Screenshots:
+![Landing Pafe](image.png)
+![Numers Game](image-1.png)
+![Alphabets Game](image-4.png)
+![Correct Answer](image-2.png)
+![Game Complete](image-3.png)
