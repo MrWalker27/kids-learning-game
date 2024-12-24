@@ -1,0 +1,102 @@
+.landing-screen {
+  height: 100vh;
+  width: 100%;   
+  display: flex;
+  flex-direction: column;
+  padding-top: 20vh;
+  background-color: #54cdeb; 
+  background-image: url("../../assets/images/left.png"), 
+                    url("../../assets/images/right.png");
+  background-repeat: no-repeat; 
+  background-size: contain;
+  background-position: left top, right top; 
+  box-sizing: border-box;
+  overflow: hidden; 
+  align-items: center;
+  }
+  
+  .title {
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 5rem;
+    font-family: "Comic Sans MS", sans-serif;
+    text-shadow: 
+        1px 1px 0 black, 
+        -1px 1px 0 black, 
+        1px -1px 0 black, 
+        -1px -1px 0 black; 
+  }
+  
+  .start-button {
+    padding: 1rem 2rem;
+    font-size: 3.5rem;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #79db65;
+    transform: scale(1.1);
+  }
+  
+  .loading-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -10rem;
+  }
+  
+  .loading-bar-text {
+    font-size: 48px; 
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive; 
+    color: #4caf50; 
+    z-index: 5;
+    text-shadow: 
+        1px 1px 0 white, 
+        -1px 1px 0 white, 
+        1px -1px 0 white, 
+        -1px -1px 0 white; 
+    overflow-x: hidden;
+    width: 0; 
+    margin-right: auto;
+    animation: grow-width 2.2s ease forwards; 
+}
+.loading-bar-text-behind{
+  font-size: 48px; 
+  font-weight: bold;
+  font-family: "Comic Sans MS", "Comic Sans", cursive; 
+  color: white; 
+  position: absolute;
+}
+.top-margin{
+  margin-top: 5rem;
+}
+@keyframes grow-width {
+    0% {
+        width: 0;
+        margin-right: 100%;
+    }
+    100% {
+        width: 100%;
+        margin-right: 0%;
+    }
+}
+@media (max-width: 430px) {
+  .title {
+      font-size: 2rem;
+      text-align: center;
+  }
+  .start-button{
+    font-size: 1.4rem ;
+  }
+  .top-margin{
+    margin-top: 3rem;
+  }
+}
+  

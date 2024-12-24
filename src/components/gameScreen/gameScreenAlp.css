@@ -1,0 +1,183 @@
+.game-screen {
+  height: 100vh;
+  width: 100%;   
+  display: flex;
+  flex-direction: column;
+  padding-top: 20vh;
+  background-color: #54cdeb; 
+  background-image: url("../../assets/images/left.png"), 
+                    url("../../assets/images/right.png");
+  background-repeat: no-repeat; 
+  background-size: contain;
+  background-position: left top, right top; 
+  box-sizing: border-box;
+  overflow: hidden; 
+  align-items: center;
+  }
+  
+  .score {
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    color: #ff6f61;
+    font-family: "Comic Sans MS", sans-serif;
+    text-shadow: 
+        1px 1px 0 white, 
+        -1px 1px 0 white, 
+        1px -1px 0 white, 
+        -1px -1px 0 white; 
+  }
+  
+  .question-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+  
+  .sequence {
+    display: flex;
+    gap: 3rem;
+    font-size: 4rem;
+    font-family: "Comic Sans MS", sans-serif;
+  }
+  
+  .sequence-item {
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ff6f61;
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  .drop-zone {
+    background-color: #fff0f0;
+  }
+  
+  .drop-zone:hover {
+    background-color: #ffdfdf;
+  }
+  
+  .options {
+    display: flex;
+    gap: 2.5rem;
+  }
+  
+  .option {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    font-size: 3.5rem;
+    cursor: grab;
+    transition: transform 0.3s ease;
+  }
+  
+  .option:active {
+    cursor: grabbing;
+    transform: scale(1.1);
+  }
+  .error-message {
+    margin-top: 20px;
+    color: white;
+    font-size: 2.85rem;
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 black, 
+    1px -1px 0 black,
+    -1px  1px 0 black, 
+    1px  1px 0 black; 
+    padding: 0px 5px;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+  
+  .popup-content {
+    background-color: #79db65;
+    border-radius: 8px;
+    padding: 1.5rem 4rem;
+    text-align: center;
+    color: white;
+    text-shadow: 
+      -1px -1px 0 black, 
+      1px -1px 0 black,
+      -1px  1px 0 black, 
+      1px  1px 0 black; 
+    font-size: 4rem; 
+    font-weight: bold;
+    }
+  
+  .fireworks-image {
+    width: 50%; 
+    height: auto;
+    margin-top: 20px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  @media (max-width: 430px) {
+    .score {
+      font-size: 2.8rem;
+      margin-bottom: 2.45rem;
+    }
+    .question-area {
+      gap: 2.8rem;
+    }
+    
+    .sequence {
+      gap: 2.1rem;
+      font-size: 2.8rem;
+    }
+    
+    .sequence-item {
+      width: 4.9rem;
+      height: 4.9rem;
+    }
+  
+    .options {
+      gap: 1.75rem;
+    }
+    
+    .option {
+      width: 4.2rem;
+      height: 4.2rem;
+      font-size: 2.45rem;
+    }
+    
+    .error-message {
+      margin-top: 25px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    
+    .popup-content {
+      background-color: #79db65;
+      border-radius: 8px;
+      padding: 0rem 2rem;
+      font-size: 2.8rem; 
+      width: 70%;
+      }
+    
+    .fireworks-image {
+      width: 100%; 
+      height: 50vh;
+    }
+  }
+    
